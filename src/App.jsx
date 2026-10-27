@@ -150,9 +150,9 @@ function App() {
   const current = weather?.current,
     hourly = weather?.hourly,
     dailyData = weather?.daily;
-  const isRainy = [
-    51, 53, 55, 61, 63, 65, 80, 81, 82, 95, 96, 99,
-  ].includes(current?.weather_code);
+  const isRainy = [51, 53, 55, 61, 63, 65, 80, 81, 82, 95, 96, 99].includes(
+    current?.weather_code,
+  );
   const nowIndex = hourly
     ? Math.max(
         0,
